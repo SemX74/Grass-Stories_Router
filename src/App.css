@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+*,*::after, ::before{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Layout */
+.Background{
+  padding: 2em;
+  position: sticky;
+  background: url(./IMG_9521-4.jpg) no-repeat;
+  background-size:contain;
+  background-attachment: fixed;
+  background-size: 110%;
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.Stories{
+  padding-top: 2em;
+  margin: auto;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.47);
+  height: fit-content;
   min-height: 100vh;
+  width: 80vw;
+}
+
+/* Nav Bar */
+.NavBar{
+  margin: auto auto 1em;
+  width: 33%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  font-size: 3em;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.NavBar-Link{
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  transition: 0.2s;
+}
+.active::after{
+  left: 25%;
+  display: block;
+  content: '';
+  width: 1.3em;
+  height: 0.1em;
+  background: purple;
+  position: absolute;
 }
 
-.App-link {
-  color: #61dafb;
+/* Home Page */
+/* Logo */
+.Stories-logo{
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.Stories-logo_title{
+  font-size: 5em;
+  font-weight:100;
+}
+.Stories-logo_subtitle{
+  font-size: 1.4em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* List of Links */
+.Stories-Li{
+  margin: 1em;
+  text-align: left;
+  list-style: none;
+}
+/* Single Link */
+.Stories-Link{
+  color: #000;
+  font-size: 2em;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.Stories-Link:hover{
+  text-decoration: underline;
+}
+/* Search div */
+.search_wrapper{
+  margin: auto;
+  max-width: fit-content;
+}
+.search{
+  font-size: 1.5em;
 }
