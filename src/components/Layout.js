@@ -12,6 +12,10 @@ const Layout = () => {
                             <NavLink to='/about' className='NavBar-Link'>About</NavLink>
                         </div>
                         <Outlet />
+                        <footer><p className='footer'>
+                             Powered by React Router and jsonplaceholder
+                             2022 by SemX74
+                             </p></footer>
                     </div>
                 </div>
             </div>

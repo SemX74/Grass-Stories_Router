@@ -2,6 +2,7 @@ import React from "react";
 import {Link} from 'react-router-dom'
 
 const PostList = ({filteredData}) =>{
+
     return(
         filteredData.map((post) =>
             <li className='Stories-Li' key={post.id}>
