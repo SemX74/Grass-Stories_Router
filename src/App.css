@@ -62,10 +62,16 @@
 .Stories-logo_subtitle{
   font-size: 1.4em;
 }
+.Stories-info{
+  margin: 2em auto;
+  font-size: 2.8em;
+  max-width: 44%;
+  text-align: justify;
+}
 
 /* List of Links */
 .Stories-NoResult{
-  margin-top: 1em;
+  margin-top: 2em;
   text-align: center;
 }
 .Stories-Li{
@@ -85,7 +91,7 @@
 }
 /* Search div */
 .search_wrapper{
-  margin: auto;
+  margin: 0em auto;
   max-width: fit-content;
 }
 .search{
