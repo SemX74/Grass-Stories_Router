@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+  width: .7em;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track{
+  background: rgb(39, 39, 39);
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgb(255, 253, 253);
+  border-radius: 50px;
+  border: solid .1em #fff;
+}
 /* Layout */
 .Background{
   padding: 2em;
@@ -17,6 +30,7 @@
 }
 
 .Stories{
+  scrollbar-width: 2px;
   display:flex; 
   flex-direction:column; 
   padding-top: 2em;
